@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +40,27 @@
 
 .container {
   max-width: 800px;
+}
+
+.btn-group .btn {
+  margin: 0 !important;
+}
+
+.btn-group .btn:first-child {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.btn-group .btn:last-child {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  margin-left: -1px !important;
+}
+
+table.book-table thead tr {
+  border-bottom: 2px solid #333 !important;
+}
+
+table.book-table thead th {
+  border-bottom: 2px solid #333 !important;
 }

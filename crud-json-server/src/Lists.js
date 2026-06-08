@@ -11,20 +11,22 @@ function Lists(props) {
         <td>{element.title}</td>
         <td>{element.author}</td>
         <td>
-          <UpdateList
-            elementId={element._id}
-            singledata={props.singledata}
-            getList={props.getList}
-            updateList={props.updateList}
-            handleChange={props.handleChange}
-          />
+          <div className="btn-group" role="group">
+            <UpdateList
+              elementId={element._id}
+              singledata={props.singledata}
+              getList={props.getList}
+              updateList={props.updateList}
+              handleChange={props.handleChange}
+            />
 
-          <DeleteList
-            elementId={element._id}
-            singledata={props.singledata}
-            getList={props.getList}
-            deleteList={props.deleteList}
-          />
+            <DeleteList
+              elementId={element._id}
+              singledata={props.singledata}
+              getList={props.getList}
+              deleteList={props.deleteList}
+            />
+          </div>
         </td>
       </tr>
     );
@@ -39,6 +41,7 @@ function Lists(props) {
           <th>Actions</th>
         </tr>
       </thead>
+
       <tbody>{listrows}</tbody>
     </table>
   );
