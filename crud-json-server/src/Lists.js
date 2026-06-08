@@ -33,7 +33,7 @@ function Lists(props) {
   });
 
   return (
-    <table className="table">
+    <table className="table book-table">
       <thead>
         <tr>
           <th>Book Title</th>

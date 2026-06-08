@@ -2,6 +2,7 @@ import React from "react";
 import Lists from "./Lists";
 import CreateList from "./CreateList";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 class App extends React.Component {
   constructor(props) {
