@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+## Prerequisites
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Node.js
+- MongoDB Community Edition
+- MongoDB Compass (optional)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+Install project dependencies:
+npm install
+ 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Database Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Run the seed.js script to create and populate the MongoDB database:
 
-### `npm test`
+bash
+node seed.js
+ 
+The script will automatically create:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Database: `booklistdb`
+- Collection: `books`
 
-### `npm run build`
+and insert the following records:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Lord of The Rings — J.R.R. Tolkien
+- The Alchemist — Paul Coelho
+- Da Vinci Code — Dan Brown
+- A Tale of Two Cities — Charles Dickens
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ 
+or manually - Import books.json into MongoDB Compass.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Database: booklistdb
+Collection: books
 
-### `npm run eject`
+## Run the Application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start the React application and Express server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ bash
+npm run dev
+ 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Application URL
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open the browser and navigate to: http://localhost:3000
+ 
